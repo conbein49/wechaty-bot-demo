@@ -1,0 +1,34 @@
+{
+  "name": "wechaty-bot",
+  "version": "1.0.0",
+  "description": "Wechaty conversational SDK getting start template & examples",
+  "type": "module",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=7"
+  },
+  "scripts": {
+    "postinstall": "check-node-version --node \">=16\" --npm \">=7\"",
+    "start": "node room-bot.js"
+  },
+  "keywords": [],
+  "author": "Huang Conbein <conbein@126.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "qrcode": "^1.5.1",
+    "wechaty": "^1.20.2",
+    "wechaty-puppet-wechat": "^1.18.4",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@chatie/git-scripts": "^0.6.2",
+    "check-node-version": "^4.2.1",
+    "is-pr": "^2.0.0"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  }
+}
